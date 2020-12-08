@@ -9,7 +9,7 @@ const App = () => {
             <MenuIcon/>
 
             {/*center*/}
-                <div className='py-1 font-semibold text-3xl tracking-wide'>Ali</div>
+            <div className='py-1 font-semibold text-3xl tracking-wide'>Ali</div>
 
             {/*{right}*/}
             {/*my photo*/}
