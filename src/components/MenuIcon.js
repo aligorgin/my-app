@@ -12,7 +12,8 @@ const MenuIcon = () => {
             }}
             className='inline-block cursor-pointer ml-4'
         >
-            {isOpen ? <MenuPage/>
+            {isOpen ?
+                    <MenuPage/>
                 : (<div>
                         <div className='w-7 rounded h-1 bg-gray-400 my-1 transform -rotate-180'/>
                         <div className='w-7 rounded h-1 bg-gray-400 my-1 '/>
