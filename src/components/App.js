@@ -16,18 +16,16 @@ const App = () => {
         setIsOpen(false);
     }
 
-    let sideDrawer;
     let backDrop;
 
     if (isOpen) {
-        sideDrawer = <SideDrawer/>;
         backDrop = <BackDrop click={backDropClickHandler}/>
     }
 
     return (
         <div className='h-full'>
             <Toolbar drawerClickHandler={drawerToggleClickHandler}/>
-            {sideDrawer}
+            <SideDrawer show={isOpen}/>
             {backDrop}
             <main className='mt-16'>
                 <p>Page content</p>
