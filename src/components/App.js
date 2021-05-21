@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
-import Toolbar from "./Toolbar/Toolbar";
-import SideDrawer from "./sideDrawer/SideDrawer";
-import BackDrop from "./backDrop/Backdrop";
+import Toolbar from "./navBar/Toolbar/Toolbar";
+import SideDrawer from "./navBar/SideDrawer";
+import BackDrop from "./navBar/Backdrop";
+import ImageTitle from "./ImageTitle";
 
 const App = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -23,13 +24,13 @@ const App = () => {
     }
 
     return (
-        <div className='h-full'>
-            <Toolbar drawerClickHandler={drawerToggleClickHandler}/>
-            <SideDrawer show={isOpen}/>
-            {backDrop}
-            <main className='mt-16'>
-                <p>Page content</p>
-            </main>
+        <div>
+            <div className='h-full'>
+                <Toolbar drawerClickHandler={drawerToggleClickHandler}/>
+                <SideDrawer show={isOpen}/>
+                {backDrop}
+            </div>
+            <ImageTitle/>
         </div>
     )
 }
